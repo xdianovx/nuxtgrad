@@ -36,8 +36,8 @@ onMounted(() => {
     tl = gsap.timeline({
       paused: true,
       defaults: {
-        ease: 'power1.inOut',
-        duration: .2
+        // ease: 'power1.inOut',
+        duration: .3
       }
     })
 
