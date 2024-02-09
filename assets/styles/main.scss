@@ -73,3 +73,7 @@ body {
 section {
   @apply bg-white;
 }
+
+.stroke-text {
+  -webkit-text-stroke: 1px black;
+}
