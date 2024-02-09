@@ -5,21 +5,18 @@ let ctx;
 
 const isO = ref(false)
 
-function op() {
-  isO.value = true
-}
 
 onMounted(() => {
-
   ctx = gsap.context((self) => {
     const tag = self.selector('video')
     gsap.to(tag, {
+      // x: 100,
       scrollTrigger: {
         trigger: tag,
         scrub: 1,
         start: 'top 50%',
         end: 'bottom 50%',
-        markers: true
+        // markers: true
       },
     });
   }, main.value);
@@ -32,10 +29,7 @@ onUnmounted(() => {
 
 <template>
   <section class="video" ref="main">
-    <div class="flex flex-col">
-      <p @click="op">open</p>
-      <div class="h-[200rem] bg-black" v-show="isO"></div>
-    </div>
+
     <video autoplay loop playsinline muted controls="false" class="h-[110%] w-full object-cover pointer-events-none">
       <source src="/video/jigsaw.mp4" type="video/mp4" />
     </video>

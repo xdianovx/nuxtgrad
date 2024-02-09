@@ -9,6 +9,7 @@ export const useSmoothScroll = () => {
   });
 
   general.scrollLenis.on("scroll", ScrollTrigger.update);
+  general.scrollLenis.on("scroll", ScrollTrigger.refresh);
 
   gsap.ticker.add((time) => {
     general.scrollLenis.raf(time * 1000);
