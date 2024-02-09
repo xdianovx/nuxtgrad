@@ -15,7 +15,6 @@ onMounted(() => {
   ctx = gsap.context((self) => {
     const top = self.selector(".top");
     const bottom = self.selector(".bottom");
-    console.log(top)
 
     tl = gsap.timeline({
       paused: true,
