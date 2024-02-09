@@ -6,12 +6,9 @@
           Наши <br />
           проекты
         </h2>
-        <div class="ml-auto flex gap-[140rem]">
-          <UiDropdown
-            class="w-[420rem]"
-            title="Выберите статус постройки"
-            :list="{}"
-          />
+        <div class="ml-auto flex gap-[140rem] mt-[90rem] items-start">
+          <UiDropdown class="w-[420rem]" title="Выберите статус постройки" :list="['Jlby', 'asd', 'asdas']" />
+          <UiDropdown class="w-[420rem]" title="Выберите статус постройки" :list="['Jlby', 'asd', 'asdas']" />
           <!-- <UiDropdown class="w-[420rem]" title="Выберите город" :list="{}" /> -->
         </div>
       </div>
@@ -35,9 +32,7 @@
           <p>Заселение до 31.03.2023</p>
         </div>
 
-        <UiLinkUnderline class="ml-auto" link="/"
-          >от 3,3 млн. руб.</UiLinkUnderline
-        >
+        <UiLinkUnderline class="ml-auto" link="/">от 3,3 млн. руб.</UiLinkUnderline>
       </div>
     </div>
   </section>
@@ -45,7 +40,7 @@
 
 <style lang="scss" scoped>
 .top {
-  @apply flex items-end;
+  @apply flex items-start;
 }
 
 .drop {
