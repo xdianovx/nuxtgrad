@@ -47,7 +47,7 @@ onUnmounted(() => {
       </div>
 
       <div class="mt-[474rem]">
-        <h1 ref="main" class="text-[295rem] uppercase index-title font-light gap-0 flex">
+        <h1 ref="main" class="text-[295rem] relative z-0 uppercase index-title font-light gap-0 flex">
           <span class="cursor-default">С</span>
           <span class="cursor-default">т</span>
           <span class="cursor-default">р</span>

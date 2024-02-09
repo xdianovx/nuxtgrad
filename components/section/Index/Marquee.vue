@@ -1,4 +1,5 @@
 <script setup>
+
 const text = 'Мы строим будущее';
 const main = ref();
 const tl = ref();

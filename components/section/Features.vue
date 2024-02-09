@@ -44,8 +44,7 @@ const data = [
         </div>
 
         <div class="flex flex-col">
-          <UiText size="md"
-            >Какой-то текст, который сможет донести то аудитории, что мы
+          <UiText size="md">Какой-то текст, который сможет донести то аудитории, что мы
             надежный застройщик и что наши комплексы отвечают всем самым высоким
             требованиям жильцов.
           </UiText>
@@ -59,16 +58,8 @@ const data = [
       </div>
     </div>
 
-    <div class="mt-[70rem] flex flex-col">
-      <div class="border-b border-grayLight" v-for="item in data">
-        <div class="container">
-          <div class="grid grid-cols-[560rem_980rem_140rem] py-[40rem]">
-            <div class="text-[14rem] leading-[100%]">{{ item.num }}</div>
-            <div class="text-[40rem] leading-[100%]">{{ item.title }}</div>
-            <div class="">+</div>
-          </div>
-        </div>
-      </div>
+    <div class="mt-[70rem] flex flex-col dimbut">
+      <CardsFeature v-for="item in data" :data="item" />
     </div>
   </section>
 </template>

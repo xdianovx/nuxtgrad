@@ -40,22 +40,15 @@ onMounted(() => {
             </p>
           </div>
 
-          <div class="grid mt-[90rem] gap-[140rem_90rem] grid-cols-2">
-            <div
-              class="item flex flex-col"
-              v-for="item in items"
-              :key="item.id"
-            >
+          <div class="grid mt-[90rem] gap-[140rem_90rem]  grid-cols-2">
+            <div class="item flex flex-col dimbut" v-for="item in items" :key="item.id">
               <div class="h-[1px] w-full bg-grayLight"></div>
               <h2 class="mt-[30rem]">
                 {{ item.title }}
               </h2>
               <div class="num mt-[60rem] flex items-end">
                 <p class="text-[128rem] leading-[100%]">{{ item.num }}</p>
-                <p
-                  v-if="item.label"
-                  class="text-[40rem] leading-[100%] mb-[8rem]"
-                >
+                <p v-if="item.label" class="text-[40rem] leading-[100%] mb-[8rem]">
                   {{ item.label }}
                 </p>
               </div>

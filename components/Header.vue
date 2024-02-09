@@ -1,5 +1,5 @@
 <script setup>
-import {useNavStore} from "~/store/navigationStore.js";
+import { useNavStore } from "~/store/navigationStore.js";
 
 const isOpen = useNavStore()
 
@@ -20,6 +20,6 @@ const isOpen = useNavStore()
 
 <style lang="scss" scoped>
 .wrap {
-  @apply border-b border-grayLight py-[50px];
+  @apply border-b border-grayLight py-[50rem];
 }
 </style>

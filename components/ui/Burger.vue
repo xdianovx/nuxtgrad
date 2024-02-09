@@ -3,8 +3,13 @@ const main = ref();
 let ctx;
 let tl;
 
+
+const store = useNavStore();
+
+
 const hoverIn = () => {
   tl.play();
+  console.log(store.isOpen);
 };
 
 const hoverOut = () => {
@@ -106,7 +111,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="burger" ref="main" @mouseenter="hoverIn" @mouseleave="hoverOut">
+  <div class="burger" ref="main" @mouseenter="hoverIn" @mouseleave="hoverOut" @click="store.setOpen">
     <span class="top"></span>
     <span class="bottom"></span>
   </div>

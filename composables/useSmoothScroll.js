@@ -15,5 +15,8 @@ export const useSmoothScroll = () => {
   });
 
   gsap.ticker.lagSmoothing(0);
+
+
+
   // general.scrollLenis.scrollTo(0);
 };
